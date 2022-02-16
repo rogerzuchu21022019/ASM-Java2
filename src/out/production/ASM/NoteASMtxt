@@ -1,0 +1,49 @@
+1 Tạo Form
+2 Xử lý Form
+3 Tạo class StaffManagement extends JFrame
+	3.1 Tạo class Employee implement Serializable
+4 psvm => setvisible
+5 Tạo initComponent()
+6 Tạo constructor => gọi initComponent()
+7 Tạo ArrayList<Employee> list
+8 Tao createTable()
+		//Để tạo title cho column
+		8.1 Tạo mảng columnsName gán giá trị title column cho mảng
+        8.2 Gọi tblInformation.setModel(columnsName)
+        8.3 Gọi createTable() trong initComponent()
+9 Tạo showTable()
+		//Để tạo rows value 
+		9.1 Gọi tblInformation.getModel() ép kiểu sang DefaultTableModel gán cho biến model
+		9.2 setRowCount =0
+		9.3 Dùng for duyệt list lấy giá trị gán vào rowsValue kiểu Object
+        9.4 model.addRow(rowsValue)
+        9.5 gọi showTable() trong initComponent
+
+		    
+10 Tạo showTableInformationWhenClickOnTable()
+		//Dùng để khi user click vào 1 dòng trên bảng thì sẽ hiện thông tin trên form
+		10.1 Gán tblInformation.getSelectedRow cho biến index để lấy vị trí dòng trong list;
+		10.2 Tạo đối tượng để nhận giá trị lấy từ list ra = cause list.get(index)
+		10.3 set full value cho form được lấy ra từ đối tượng vừa tạo
+	
+11 Tạo clickTable() để click vào bảng khi user click vào bảng
+		11.1 Qua form tạo event mouseClick cho tblInformation
+		11.2 Gọi hàm showTableInformationWhenClickOnTable() để xử lý 
+		
+12 Tạo clickButton() để chứa tất cả event click button	
+		12.1 qua Form để lấy event click	
+//Đoạn xử lý nút New
+// Mô tả chức năng: add,reset form input và hiện lên table
+13 Tạo addStaff()
+		13.1 add new Employee(...) vao list
+		13.2 Gọi trong event click của btnAdd
+14 Tạo resetFormInput()
+		14.1 set tất cả txt = ""
+		14.2 Gọi trong event click của btnAdd
+15 Nút New :Gắn 3 hàm chức năng của nút New vào trong event click
+		15.1 addStaff();
+		15.2 resetFormInput();
+		15.3 showTable();
+		15.4 Run Succesfull (Nút New và click vào bảng được giá trị)
+//Đoạn xử lý nút Save
+//Mô tả: Save xuống file txt để khi mở lại sẽ điền vào form

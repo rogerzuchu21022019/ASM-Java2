@@ -1,0 +1,497 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<form xmlns="http://www.intellij.com/uidesigner/form/" version="1" bind-to-class="StaffManagement">
+  <grid id="27dc6" binding="panelStaffManagement" layout-manager="GridLayoutManager" row-count="9" column-count="3" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+    <margin top="20" left="20" bottom="0" right="20"/>
+    <constraints>
+      <xy x="20" y="20" width="1066" height="539"/>
+    </constraints>
+    <properties>
+      <background color="-14539722"/>
+      <foreground color="-14539722"/>
+      <opaque value="false"/>
+      <preferredSize width="700" height="487"/>
+    </properties>
+    <border type="none"/>
+    <children>
+      <grid id="d7461" layout-manager="GridLayoutManager" row-count="7" column-count="1" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+        <margin top="0" left="10" bottom="0" right="10"/>
+        <constraints>
+          <grid row="1" column="2" row-span="7" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <doubleBuffered value="true"/>
+          <opaque value="false"/>
+          <requestFocusEnabled value="true"/>
+        </properties>
+        <border type="etched"/>
+        <children>
+          <component id="c07fb" class="javax.swing.JButton" binding="btnNew">
+            <constraints>
+              <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties>
+              <hideActionText value="true"/>
+              <horizontalAlignment value="4"/>
+              <horizontalTextPosition value="2"/>
+              <icon value="images/reset.png"/>
+              <iconTextGap value="24"/>
+              <text value="New"/>
+            </properties>
+          </component>
+          <component id="b5990" class="javax.swing.JButton" binding="btnSave">
+            <constraints>
+              <grid row="1" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties>
+              <horizontalAlignment value="4"/>
+              <horizontalTextPosition value="2"/>
+              <icon value="images/ 1.png"/>
+              <iconTextGap value="24"/>
+              <text value="Save"/>
+            </properties>
+          </component>
+          <component id="cd7f1" class="javax.swing.JButton" binding="btnDelete">
+            <constraints>
+              <grid row="2" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties>
+              <horizontalAlignment value="4"/>
+              <horizontalTextPosition value="2"/>
+              <icon value="images/garbage.png"/>
+              <iconTextGap value="24"/>
+              <text value="Delete"/>
+            </properties>
+          </component>
+          <component id="26847" class="javax.swing.JButton" binding="btnFind">
+            <constraints>
+              <grid row="3" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties>
+              <horizontalAlignment value="4"/>
+              <horizontalTextPosition value="2"/>
+              <icon value="images/searching.png"/>
+              <iconTextGap value="24"/>
+              <opaque value="true"/>
+              <selected value="false"/>
+              <text value="Find"/>
+              <verticalAlignment value="0"/>
+            </properties>
+          </component>
+          <component id="230f" class="javax.swing.JButton" binding="btnOpen">
+            <constraints>
+              <grid row="4" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties>
+              <horizontalAlignment value="4"/>
+              <horizontalTextPosition value="2"/>
+              <icon value="images/ 2.png"/>
+              <iconTextGap value="24"/>
+              <text value="Open"/>
+            </properties>
+          </component>
+          <component id="de44" class="javax.swing.JButton" binding="btnExit">
+            <constraints>
+              <grid row="5" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties>
+              <horizontalAlignment value="4"/>
+              <horizontalTextPosition value="2"/>
+              <icon value="images/exit.png"/>
+              <iconTextGap value="24"/>
+              <text value="Exit"/>
+            </properties>
+          </component>
+          <component id="3438f" class="javax.swing.JButton" binding="btnHack">
+            <constraints>
+              <grid row="6" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties>
+              <horizontalAlignment value="4"/>
+              <horizontalTextPosition value="2"/>
+              <icon value="images/exit.png"/>
+              <iconTextGap value="24"/>
+              <text value="HACK"/>
+            </properties>
+          </component>
+        </children>
+      </grid>
+      <grid id="9db4c" layout-manager="GridLayoutManager" row-count="1" column-count="5" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+        <margin top="0" left="0" bottom="0" right="0"/>
+        <constraints>
+          <grid row="6" column="0" row-span="1" col-span="2" vsize-policy="3" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <font name="Courier" size="28" style="1"/>
+          <opaque value="false"/>
+        </properties>
+        <border type="etched"/>
+        <children>
+          <component id="7c3f6" class="javax.swing.JButton" binding="btnRewind">
+            <constraints>
+              <grid row="0" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false">
+                <minimum-size width="40" height="-1"/>
+                <maximum-size width="50" height="-1"/>
+              </grid>
+            </constraints>
+            <properties>
+              <icon value="images/rewind.png"/>
+              <text value=""/>
+            </properties>
+          </component>
+          <component id="61c16" class="javax.swing.JButton" binding="btnPrevious">
+            <constraints>
+              <grid row="0" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false">
+                <maximum-size width="50" height="-1"/>
+              </grid>
+            </constraints>
+            <properties>
+              <icon value="images/previous.png"/>
+              <text value=""/>
+            </properties>
+          </component>
+          <component id="516d6" class="javax.swing.JButton" binding="btnNext">
+            <constraints>
+              <grid row="0" column="3" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false">
+                <maximum-size width="50" height="-1"/>
+              </grid>
+            </constraints>
+            <properties>
+              <icon value="images/right-arrow.png"/>
+              <text value=""/>
+            </properties>
+          </component>
+          <component id="211d6" class="javax.swing.JButton" binding="btnForward">
+            <constraints>
+              <grid row="0" column="4" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false">
+                <maximum-size width="50" height="-1"/>
+              </grid>
+            </constraints>
+            <properties>
+              <icon value="images/fast-forward-button.png"/>
+              <text value=""/>
+            </properties>
+          </component>
+          <component id="d9cd2" class="javax.swing.JLabel" binding="lblRecord">
+            <constraints>
+              <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties>
+              <text value="Record: 0/0"/>
+            </properties>
+          </component>
+        </children>
+      </grid>
+      <grid id="b2fd2" layout-manager="GridLayoutManager" row-count="1" column-count="5" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+        <margin top="0" left="0" bottom="0" right="0"/>
+        <constraints>
+          <grid row="7" column="0" row-span="1" col-span="2" vsize-policy="3" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <font name="Courier" size="28" style="1"/>
+          <opaque value="false"/>
+        </properties>
+        <border type="etched"/>
+        <children>
+          <component id="7bdee" class="javax.swing.JButton" binding="btnID">
+            <constraints>
+              <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties>
+              <icon value="images/rewind.png"/>
+              <rolloverIcon value="images/1.png"/>
+              <rolloverSelectedIcon value="images/id-card.png"/>
+              <selected value="true"/>
+              <selectedIcon value="images/salary.png"/>
+              <text value="Sort By ID"/>
+            </properties>
+          </component>
+          <component id="421e" class="javax.swing.JButton" binding="btnName">
+            <constraints>
+              <grid row="0" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties>
+              <icon value="images/previous.png"/>
+              <rolloverIcon value="images/ 2.png"/>
+              <rolloverSelectedIcon value="images/searching.png"/>
+              <selected value="true"/>
+              <selectedIcon value="images/garbage.png"/>
+              <text value="Sort By Name"/>
+            </properties>
+          </component>
+          <component id="109a4" class="javax.swing.JButton" binding="btnSalary">
+            <constraints>
+              <grid row="0" column="3" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties>
+              <icon value="images/right-arrow.png"/>
+              <rolloverIcon value="images/reset.png"/>
+              <rolloverSelectedIcon value="images/id-card.png"/>
+              <selected value="true"/>
+              <selectedIcon value="images/1.png"/>
+              <text value="Sort By Salary"/>
+            </properties>
+          </component>
+          <component id="58de7" class="javax.swing.JButton" binding="btnEmail">
+            <constraints>
+              <grid row="0" column="4" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties>
+              <icon value="images/fast-forward-button.png"/>
+              <rolloverIcon value="images/searching.png"/>
+              <rolloverSelectedIcon value="images/id-card.png"/>
+              <selected value="true"/>
+              <selectedIcon value="images/21.png"/>
+              <text value="Sort By Email"/>
+            </properties>
+          </component>
+          <component id="1c425" class="javax.swing.JButton" binding="btnAge">
+            <constraints>
+              <grid row="0" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties>
+              <icon value="images/face-id.png"/>
+              <inheritsPopupMenu value="true"/>
+              <pressedIcon value="images/searching.png"/>
+              <rolloverEnabled value="true"/>
+              <rolloverIcon value="images/reset.png"/>
+              <rolloverSelectedIcon value="images/21.png"/>
+              <selected value="true"/>
+              <selectedIcon value="images/id-card.png"/>
+              <text value="Sort By Age"/>
+            </properties>
+          </component>
+        </children>
+      </grid>
+      <grid id="d8f63" layout-manager="GridLayoutManager" row-count="5" column-count="1" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+        <margin top="0" left="10" bottom="0" right="10"/>
+        <constraints>
+          <grid row="1" column="0" row-span="5" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <opaque value="false"/>
+          <requestFocusEnabled value="true"/>
+        </properties>
+        <border type="etched" title-justification="3"/>
+        <children>
+          <component id="86ba6" class="javax.swing.JLabel" binding="lblStaffID">
+            <constraints>
+              <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties>
+              <horizontalAlignment value="2"/>
+              <horizontalTextPosition value="4"/>
+              <icon value="images/face-id.png"/>
+              <iconTextGap value="20"/>
+              <labelFor value=""/>
+              <text value="Staff ID"/>
+            </properties>
+          </component>
+          <component id="c67db" class="javax.swing.JLabel" binding="lblFullName">
+            <constraints>
+              <grid row="1" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties>
+              <horizontalAlignment value="2"/>
+              <horizontalTextPosition value="4"/>
+              <icon value="images/id-card.png"/>
+              <iconTextGap value="10"/>
+              <text value="FullName"/>
+            </properties>
+          </component>
+          <component id="813f2" class="javax.swing.JLabel" binding="lblAge">
+            <constraints>
+              <grid row="2" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties>
+              <horizontalAlignment value="2"/>
+              <horizontalTextPosition value="4"/>
+              <icon value="images/21.png"/>
+              <iconTextGap value="20"/>
+              <labelFor value=""/>
+              <opaque value="false"/>
+              <text value="Age      "/>
+              <verticalTextPosition value="0"/>
+            </properties>
+          </component>
+          <component id="ad252" class="javax.swing.JLabel" binding="lblEmail">
+            <constraints>
+              <grid row="3" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties>
+              <horizontalAlignment value="2"/>
+              <horizontalTextPosition value="4"/>
+              <icon value="images/gmail.png"/>
+              <iconTextGap value="20"/>
+              <text value="Email  "/>
+            </properties>
+          </component>
+          <component id="59952" class="javax.swing.JLabel" binding="lblSalary">
+            <constraints>
+              <grid row="4" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties>
+              <horizontalAlignment value="2"/>
+              <horizontalTextPosition value="4"/>
+              <icon value="images/salary.png"/>
+              <iconTextGap value="20"/>
+              <text value="Salary  "/>
+            </properties>
+          </component>
+        </children>
+      </grid>
+      <grid id="5164a" layout-manager="GridLayoutManager" row-count="5" column-count="1" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+        <margin top="0" left="0" bottom="0" right="0"/>
+        <constraints>
+          <grid row="1" column="1" row-span="5" col-span="1" vsize-policy="3" hsize-policy="7" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <opaque value="false"/>
+        </properties>
+        <border type="etched" title-position="1"/>
+        <children>
+          <component id="e8f29" class="javax.swing.JTextField" binding="txtFullName">
+            <constraints>
+              <grid row="1" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
+                <preferred-size width="150" height="-1"/>
+              </grid>
+            </constraints>
+            <properties>
+              <opaque value="false"/>
+            </properties>
+          </component>
+          <component id="48746" class="javax.swing.JTextField" binding="txtEmail">
+            <constraints>
+              <grid row="3" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
+                <preferred-size width="150" height="-1"/>
+              </grid>
+            </constraints>
+            <properties>
+              <opaque value="false"/>
+            </properties>
+          </component>
+          <component id="29dd3" class="javax.swing.JTextField" binding="txtStaffId">
+            <constraints>
+              <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties>
+              <opaque value="false"/>
+              <text value=""/>
+            </properties>
+          </component>
+          <component id="48a6b" class="javax.swing.JTextField" binding="txtAge">
+            <constraints>
+              <grid row="2" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties>
+              <opaque value="false"/>
+            </properties>
+          </component>
+          <component id="a7ccc" class="javax.swing.JTextField" binding="txtSalary">
+            <constraints>
+              <grid row="4" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties>
+              <opaque value="false"/>
+            </properties>
+          </component>
+        </children>
+      </grid>
+      <grid id="a5713" layout-manager="GridLayoutManager" row-count="1" column-count="2" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+        <margin top="0" left="0" bottom="10" right="0"/>
+        <constraints>
+          <grid row="0" column="0" row-span="1" col-span="3" vsize-policy="3" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <opaque value="false"/>
+        </properties>
+        <border type="etched"/>
+        <children>
+          <component id="c2024" class="javax.swing.JLabel" binding="lblStaffManagement">
+            <constraints>
+              <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties>
+              <font name="Courier" size="32" style="1"/>
+              <icon value="images/man-2.png"/>
+              <text value="Staff Management"/>
+            </properties>
+          </component>
+          <grid id="4fbf7" layout-manager="GridLayoutManager" row-count="2" column-count="1" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+            <margin top="0" left="0" bottom="0" right="0"/>
+            <constraints>
+              <grid row="0" column="1" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties>
+              <opaque value="false"/>
+            </properties>
+            <border type="none"/>
+            <children>
+              <component id="ce95a" class="javax.swing.JLabel" binding="lblClock">
+                <constraints>
+                  <grid row="1" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties>
+                  <iconTextGap value="0"/>
+                  <text value="10:22AM"/>
+                </properties>
+              </component>
+              <component id="52f3a" class="javax.swing.JLabel">
+                <constraints>
+                  <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties>
+                  <icon value="images/smart-clock.png"/>
+                  <text value=""/>
+                </properties>
+              </component>
+            </children>
+          </grid>
+        </children>
+      </grid>
+      <grid id="409be" layout-manager="GridLayoutManager" row-count="1" column-count="1" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+        <margin top="0" left="0" bottom="0" right="0"/>
+        <constraints>
+          <grid row="8" column="0" row-span="1" col-span="3" vsize-policy="3" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties/>
+        <border type="none"/>
+        <children>
+          <scrollpane id="b5a9d">
+            <constraints>
+              <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="7" hsize-policy="7" anchor="0" fill="3" indent="0" use-parent-layout="false">
+                <preferred-size width="-1" height="200"/>
+                <maximum-size width="-1" height="200"/>
+              </grid>
+            </constraints>
+            <properties>
+              <autoscrolls value="true"/>
+              <background color="-13437671"/>
+              <enabled value="true"/>
+              <focusCycleRoot value="true"/>
+              <focusTraversalPolicyProvider value="true"/>
+              <font size="20"/>
+              <opaque value="false"/>
+              <requestFocusEnabled value="false"/>
+              <verifyInputWhenFocusTarget value="true"/>
+              <visible value="true"/>
+              <wheelScrollingEnabled value="true"/>
+            </properties>
+            <border type="none">
+              <font/>
+              <title-color color="-3615755"/>
+            </border>
+            <children>
+              <component id="864be" class="javax.swing.JTable" binding="tblInformation">
+                <constraints/>
+                <properties>
+                  <enabled value="true"/>
+                  <opaque value="false"/>
+                </properties>
+              </component>
+            </children>
+          </scrollpane>
+        </children>
+      </grid>
+    </children>
+  </grid>
+</form>
